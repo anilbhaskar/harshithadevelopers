@@ -3658,27 +3658,29 @@ li .richText-btn[data-command="toggleCode"] {
     font-size: 22px;
     height: 35px;
     width: 35px;
-    border: 1px solid #111111;
-    display: inline-block;
     line-height: 37px;
     text-align: center;
     cursor: pointer;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 20px;
     top: 26px;
     display: block;
+    background: linear-gradient(to right, #ff5858, #f857a6);
+    color: white;
+    border-radius: 10px 0px 10px 20px;
+    z-index: 999;
   }
   .canvas-open span {
     font-weight: 600;
   }
 
   .offcanvas-menu-wrapper {
-    width: 300px;
+    width: 320px;
     position: fixed;
     height: 100%;
     background: #ffffff;
     overflow-y: scroll;
-    padding: 70px 30px 30px 30px;
+    padding: 30px 10px 10px 30px;
     z-index: 99;
     left: -300px;
     top: 0;
@@ -3697,7 +3699,6 @@ li .richText-btn[data-command="toggleCode"] {
     font-size: 22px;
     height: 35px;
     width: 35px;
-    border: 1px solid #111111;
     display: inline-block;
     line-height: 35px;
     text-align: center;
@@ -3705,6 +3706,9 @@ li .richText-btn[data-command="toggleCode"] {
     position: absolute;
     right: 30px;
     top: 30px;
+    background: linear-gradient(to right, #ff5858, #f857a6);
+    color: white;
+    border-radius: 10px 0px 10px 20px;
   }
   .offcanvas-menu-wrapper .canvas-close span {
     font-weight: 600;
@@ -3723,7 +3727,7 @@ li .richText-btn[data-command="toggleCode"] {
   }
   .offcanvas-menu-wrapper .om-widget ul li {
     list-style: none;
-    font-size: 14px;
+    font-size: 10px;
     color: #444444;
     font-weight: 500;
     margin-bottom: 20px;
@@ -3790,9 +3794,9 @@ li .richText-btn[data-command="toggleCode"] {
     background: transparent;
     color: #111111;
   }
-  .offcanvas-menu-wrapper .slicknav_nav li {
+  /* .offcanvas-menu-wrapper .slicknav_nav li {
     border-bottom: 1px solid #111111;
-  }
+  } */
   .slicknav_nav #middle-logo {
     display: none;
   }
@@ -4133,16 +4137,17 @@ li .richText-btn[data-command="toggleCode"] {
     font-size: 22px;
     height: 35px;
     width: 35px;
-    display: block;
     line-height: 37px;
     text-align: center;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 26px;
     display: block;
     background: linear-gradient(to right, #ff5858, #f857a6);
     color: white;
+    border-radius: 10px 0px 10px 20px;
+    z-index: 999;
   }
   .canvas-open span {
     font-weight: 600;
@@ -4154,7 +4159,7 @@ li .richText-btn[data-command="toggleCode"] {
     height: 100%;
     background: #ffffff;
     overflow-y: scroll;
-    padding: 70px 30px 30px 30px;
+    padding: 30px 10px 10px 30px;
     z-index: 99;
     left: -300px;
     top: 0;
@@ -4173,7 +4178,6 @@ li .richText-btn[data-command="toggleCode"] {
     font-size: 22px;
     height: 35px;
     width: 35px;
-    border: 1px solid #111111;
     display: inline-block;
     line-height: 35px;
     text-align: center;
@@ -4181,6 +4185,9 @@ li .richText-btn[data-command="toggleCode"] {
     position: absolute;
     right: 30px;
     top: 30px;
+    background: linear-gradient(to right, #ff5858, #f857a6);
+    color: white;
+    border-radius: 10px 0px 10px 20px;
   }
   .offcanvas-menu-wrapper .canvas-close span {
     font-weight: 600;
@@ -4199,7 +4206,7 @@ li .richText-btn[data-command="toggleCode"] {
   }
   .offcanvas-menu-wrapper .om-widget ul li {
     list-style: none;
-    font-size: 14px;
+    font-size: 10px;
     color: #444444;
     font-weight: 500;
     margin-bottom: 20px;
@@ -4266,9 +4273,9 @@ li .richText-btn[data-command="toggleCode"] {
     background: transparent;
     color: #111111;
   }
-  .offcanvas-menu-wrapper .slicknav_nav li {
+  /* .offcanvas-menu-wrapper .slicknav_nav li {
     border-bottom: 1px solid #111111;
-  }
+  } */
   .slicknav_nav #middle-logo {
     display: none;
   }
@@ -4463,6 +4470,7 @@ li .richText-btn[data-command="toggleCode"] {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-color: none;
   outline: none;
+  border-radius: 10px 0px 25px 0px;
 }
 .cardimage {
   height: 290px;
@@ -4517,16 +4525,4 @@ body::-webkit-scrollbar-thumb {
 }
 html {
   scroll-behavior: smooth;
-}
-
-.loadingtext {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 57%;
-  left: 48%;
-  margin-top: -13px;
-  margin-left: -13px;
-  font-size: 25px;
-  font-weight: 700;
 }
