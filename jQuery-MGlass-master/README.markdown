@@ -13,7 +13,7 @@ Fading animations with CSS3 and jQuery fallback.
 Write this in the header section :
 
 	<link href="jquery.mglass.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="jquery.mglass.js"></script>
 
 
