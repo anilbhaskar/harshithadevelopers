@@ -4424,8 +4424,8 @@ li .richText-btn[data-command="toggleCode"] {
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .sticky #top {
   position: fixed;
