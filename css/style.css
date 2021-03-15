@@ -4523,6 +4523,3 @@ body::-webkit-scrollbar-thumb {
   background-color: #e9164a;
   border-radius: 20px;
 }
-html {
-  scroll-behavior: smooth;
-}

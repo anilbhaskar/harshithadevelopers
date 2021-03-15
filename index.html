@@ -109,18 +109,21 @@
                     <div class="col-lg-9">
                         <nav class="nav-menu nav nav-pills nav-stacked" id="navbar">
                             <ul>
-                                <li class="active"><a href="#hero-section">Home</a></li>
-                                <li><a href="#about-section">Offers</a></li>
-                                <li id="layouts-li"><a href="#layouts">Our Layouts</a>
+                                <li class="active"><a href="#hero-section" data-scrollto="#hero-section">Home</a></li>
+                                <li><a href="#about-section" data-scrollto="#about-section">Offers</a></li>
+                                <li id="layouts-li"><a href="#layouts" data-scrollto="#layouts">Our Layouts</a>
                                     <ul class="dropdown">
-                                        <li><a href="#property-section">Kondapavuluru Layout</a></li>
-                                        <li><a href="#property-section-2">Edulagudem Layout</a></li>
+                                        <li><a href="#property-section" data-scrollto="#property-section">Kondapavuluru
+                                                Layout</a></li>
+                                        <li><a href="#property-section-2" data-scrollto="#property-section-2">Edulagudem
+                                                Layout</a></li>
                                     </ul>
                                 </li>
                                 <!-- <li><a href="./agents.html">Agents</a></li> -->
-                                <li><a href="#team-section">About</a></li>
+                                <li><a href="#team-section" data-scrollto="#team-section">About</a></li>
                                 <!-- <li><a href="./blog.html">Blog</a></li> -->
-                                <li id="contactus"><a href="#footer-section">Contact</a></li>
+                                <li id="contactus"><a href="#footer-section" data-scrollto="#footer-section">Contact</a>
+                                </li>
                                 <li id="middle-logo" style="display:none">
                                     <img src="img/favicon-harshitha.png"
                                         style="max-width: 8%;position: relative; left: 130px;" alt="">
@@ -854,20 +857,30 @@
     <script src="./js/main.js"></script>
     <script src="./js/jquery.mglass.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/scrolltosmooth.pkgd.min.js"></script>
     <script>
+
+        let smoothScroll = new scrollToSmooth('[data-scrollto]', {
+            easing: 'easeInOutQuint',
+            duration: 800,
+            durationRelative: true,
+            durationMin: 300,
+            durationMax: 5000,
+        });
+        smoothScroll.init();
         $(document).ready(function () {
             magnify("layoutimg", 3);
             magnify("secondlayoutimg", 3);
         });
-        $("nav").find("a").click(function (e) {
-            e.preventDefault();
-            var section = $(this).attr("href");
-            $(this).addClass("active");
-
-            $("html, body").animate({
-                scrollTop: $(section).offset().top
-            }, 1000);
-        });
+        // $("nav").find("a").click(function (e) {
+        //     e.preventDefault();
+        //     var section = $(this).attr("href");
+        //     $(this).addClass("active");
+        //     scroll({
+        //         top: $(section).offset().top,
+        //         behavior: "smooth"
+        //     });
+        // });
 
     </script>
     <script>
