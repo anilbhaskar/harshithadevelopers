@@ -69,6 +69,7 @@ a:focus {
   text-decoration: none;
   outline: none;
   color: #fff;
+  cursor: pointer;
 }
 
 ul,
@@ -303,6 +304,7 @@ ol {
   display: inline-block;
   margin-right: 40px;
   position: relative;
+  cursor: pointer;
 }
 .hs-nav .nav-menu ul li .dropdown {
   position: absolute;
@@ -747,7 +749,19 @@ ol {
 --------------------------*/
 .property-section.latest-property-section {
   padding-bottom: 60px;
-  background: #f7f7f7;
+  background: url(../img/bg-maps.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.feature-property-section {
+  padding-bottom: 60px;
+  background: url(../img/bg-maps.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .property-section.profile-page {
   padding-top: 50px;
@@ -1149,7 +1163,7 @@ ol {
   Team Section
 -----------------------*/
 .team-section {
-  background: #f5f5f5;
+  background: white;
 }
 .team-section .section-title {
   margin-bottom: 50px;
@@ -1385,7 +1399,11 @@ ol {
 -----------------------*/
 .contact-section {
   position: relative;
-  background: white;
+  background: url(../img/bg-maps.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 450px;
 }
 .contact-info {
@@ -4413,6 +4431,7 @@ li .richText-btn[data-command="toggleCode"] {
 }
 .property-filter img {
   max-width: 100%;
+  border-radius: 15px;
 }
 .img-magnifier-container {
   position: relative;
@@ -4522,4 +4541,151 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #e9164a;
   border-radius: 20px;
+}
+
+.video-section {
+  background: #f7f7f7;
+}
+
+.video-container .text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #02315c;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+
+.video-container .text-content .dp:after {
+  backface-visibility: hidden;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-out, border-color 0.3s ease-out;
+  position: relative;
+  display: block;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid #e9164a;
+  content: "";
+  padding-bottom: inherit;
+}
+
+.video-container .text-content .dp {
+  color: #02315c;
+}
+
+.video-container .text-content .watch {
+  font-size: 20px;
+  font-weight: 600;
+  color: #02315c;
+  margin-top: 60px;
+}
+
+.video-container .video-overlay-link {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+#videoModal.modal {
+  background: #00000080;
+}
+
+#videoModal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 850px;
+  margin: auto;
+}
+
+#videoModal .modal-content {
+  margin: 0 15px;
+}
+
+#videoModal .modal-body {
+  max-height: 750px;
+  padding: 1.2rem;
+}
+
+.video-container .video-content {
+  position: relative;
+  margin-bottom: -4px;
+}
+
+.video-container .text-content {
+  margin: auto;
+  text-align: center;
+}
+
+.video-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  margin-left: 2%;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 10px 20px 0 rgb(57 58 61 / 15%);
+  background: white;
+}
+@media screen and (max-width: 650px) {
+  .video-container {
+    width: auto;
+    height: 380px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .video-container {
+    width: auto;
+    height: 380px;
+    flex-direction: column;
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .video-section .container {
+    margin-top: 2%;
+  }
+
+  .video-container {
+    position: relative;
+  }
+  .marquee {
+    width: auto;
+  }
+
+  .marquee img {
+    height: auto;
+    width: auto;
+  }
+
+  .drewsvg {
+    top: 0;
+  }
+}
+.tippy-box[data-theme~="HD"] {
+  background-color: #e9164a;
+  color: white;
+}
+.tippy-arrow {
+  background-color: #e9164a;
+}
+.tippy-arrow {
+  background-color: #e9164a;
+  color: #e9164a;
+}
+h4 i {
+  color: #e9164a;
 }
