@@ -687,7 +687,10 @@
     <script>
         $(document).ready(function () {
             $('.zoom').magnify();
-            $('.zoom1').magnify();
+            $('.zoom1').magnify({
+                touchBottomOffset: 90,
+                limitBounds: true,
+            });
         });
         tippy('[data-tippy-content]', {
             theme: 'HD',
