@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="row property-filter" data-aos="zoom-in-up">
-                        <img src="img/Harshitha-Prayer-City-New-_-Inner.jpg" id="secondlayoutimg" class="zoom"
+                        <img src="img/Harshitha-Prayer-City-New-_-Inner.jpg" id="secondlayoutimg" class="zoom1"
                             data-magnify-src="img/Harshitha-Prayer-City-New-_-Inner.jpg">
                     </div>
 
@@ -685,8 +685,10 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/tippy-bundle.umd.min.js"></script>
     <script>
-
-        $('.zoom').magnify();
+        $(document).ready(function () {
+            $('.zoom').magnify();
+            $('.zoom1').magnify();
+        });
         tippy('[data-tippy-content]', {
             theme: 'HD',
             animations: 'scale-subtle',
