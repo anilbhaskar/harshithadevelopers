@@ -4655,7 +4655,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     height: 380px;
     flex-direction: column;
-    margin: 0 10px;
+    margin: 0 auto;
     padding: 0;
   }
 
